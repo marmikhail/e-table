@@ -170,7 +170,7 @@ export class App extends React.Component {
             })()}
             <List
             onAdd  = {(search) => { 
-               const pattern = "[e|E|е|Е]\s*?([0-9]{3,})";
+               const pattern = "[e|E|е|Е]*?([0-9]{3,})";
                const match = search.match(pattern);
                if (match)
                   search = match[1];
