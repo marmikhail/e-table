@@ -27,7 +27,7 @@ export class Find extends React.Component {
         }}
       >
         <TextField
-          className   = "find"
+          className = "find"
           label = "Введите код добавки или ее название"
           value       = { this.state.note }
           onChange    = {({ target: { value } }) => this.setState({

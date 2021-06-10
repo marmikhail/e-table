@@ -11,13 +11,13 @@ export const List = (props) => {
     <Container>
       <Row>
             <Col sizeXL={8} offsetXL={2}>
-            <Find
+            <Find className = "find"
              onAdd = {onAdd}
             />
             {(() => {
                 switch (completed) {
                     case true:
-                        return <Boxes 
+                        return <Boxes
                         name = {name}
                         dang = {dang}
                         perm = {perm}
