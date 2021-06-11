@@ -6,9 +6,9 @@ import "../App.css";
 export const Boxes = (props) => {
     const {name, dang, perm} = props;
     return (   
-      <Container> 
+      <Container style = {{paddingLeft: "0px"}}> 
         <Row  className = "boxes">
-          <Col offsetXL = {-0.5} className = "box">
+          <Col className = "box">
           <Card style={
           (() => {
             if (perm === "1")
@@ -26,7 +26,7 @@ export const Boxes = (props) => {
           </Col>
           </Row>
           <Row className = "boxes">
-          <Col offsetXL = {-0.5} className = "box">
+          <Col className = "box">
           <Card> 
               <CardBody> 
                 <CardContent>  
